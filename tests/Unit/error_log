@@ -1,0 +1,29 @@
+[02-Oct-2024 22:25:54 UTC] PHP Fatal error:  Class 'PHPUnit\Framework\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Unit/ExampleTest.php on line 7
+[11-Nov-2024 15:33:35 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/tests/Unit/ExampleTest.php on line 7
+[13-Nov-2024 15:02:33 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/tests/Unit/ExampleTest.php on line 7
+[03-Dec-2024 14:03:15 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/tests/Unit/ExampleTest.php on line 7
+[16-Dec-2024 06:33:20 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/tests/Unit/ExampleTest.php on line 7
+[10-Jan-2025 19:51:09 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/hamiltob/public_html/mobile_app/tests/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/tests/Unit/ExampleTest.php on line 7
+[19-Jan-2025 20:26:24 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/hamiltob/public_html/mobile_app/tests/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/tests/Unit/ExampleTest.php on line 7
+[28-Jan-2025 07:39:36 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPUnit\Framework\TestCase' not found in /home/hamiltob/public_html/mobile_app/tests/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/tests/Unit/ExampleTest.php on line 7

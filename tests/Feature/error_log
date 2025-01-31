@@ -1,0 +1,33 @@
+[03-Oct-2024 00:25:03 UTC] PHP Fatal error:  Class 'Tests\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php on line 8
+[11-Nov-2024 14:27:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php on line 8
+[19-Nov-2024 20:45:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php on line 8
+[22-Nov-2024 12:37:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php on line 8
+[03-Dec-2024 14:03:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php on line 8
+[16-Dec-2024 07:39:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/tests/Feature/ExampleTest.php on line 8
+[10-Jan-2025 16:13:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/hamiltob/public_html/mobile_app/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/tests/Feature/ExampleTest.php on line 8
+[19-Jan-2025 20:26:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/hamiltob/public_html/mobile_app/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/tests/Feature/ExampleTest.php on line 8
+[26-Jan-2025 02:40:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Tests\TestCase' not found in /home/hamiltob/public_html/mobile_app/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/tests/Feature/ExampleTest.php on line 8

@@ -1,0 +1,33 @@
+[02-Oct-2024 15:29:43 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php on line 7
+[11-Nov-2024 02:14:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php on line 7
+[11-Nov-2024 17:30:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php on line 7
+[19-Nov-2024 15:54:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php on line 7
+[02-Dec-2024 20:52:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php on line 7
+[16-Dec-2024 08:47:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Exceptions/Handler.php on line 7
+[11-Jan-2025 05:05:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/hamiltob/public_html/mobile_app/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Exceptions/Handler.php on line 8
+[16-Jan-2025 08:44:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/hamiltob/public_html/mobile_app/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Exceptions/Handler.php on line 8
+[26-Jan-2025 22:57:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/hamiltob/public_html/mobile_app/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Exceptions/Handler.php on line 8

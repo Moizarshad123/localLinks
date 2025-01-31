@@ -1,0 +1,64 @@
+[29-Sep-2024 16:45:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[20-Oct-2024 19:59:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[06-Nov-2024 10:45:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[06-Nov-2024 17:35:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[18-Nov-2024 13:10:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[21-Nov-2024 01:48:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[21-Nov-2024 01:48:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[21-Nov-2024 01:48:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[21-Nov-2024 01:49:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[27-Nov-2024 20:54:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[27-Nov-2024 21:56:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[02-Dec-2024 11:52:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[11-Dec-2024 02:41:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/nasa/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/bootstrap/app.php on line 14
+[06-Jan-2025 09:55:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/mobile_app/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/bootstrap/app.php on line 14
+[15-Jan-2025 02:53:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/mobile_app/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/bootstrap/app.php on line 14
+[25-Jan-2025 19:31:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hamiltob/public_html/mobile_app/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/bootstrap/app.php on line 14

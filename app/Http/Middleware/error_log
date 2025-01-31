@@ -1,0 +1,228 @@
+[05-Oct-2024 05:33:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustHosts.php on line 7
+[05-Oct-2024 11:05:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[05-Oct-2024 17:16:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/EncryptCookies.php on line 7
+[05-Oct-2024 17:48:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrimStrings.php on line 7
+[05-Oct-2024 17:58:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[05-Oct-2024 19:30:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/Authenticate.php on line 7
+[05-Oct-2024 23:00:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Fideloper\Proxy\TrustProxies' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustProxies.php on line 8
+[13-Nov-2024 02:16:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/Authenticate.php on line 7
+[13-Nov-2024 11:10:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrimStrings.php on line 7
+[14-Nov-2024 10:06:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustHosts.php on line 7
+[15-Nov-2024 03:46:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[15-Nov-2024 17:38:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[16-Nov-2024 01:58:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/EncryptCookies.php on line 7
+[16-Nov-2024 05:16:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[16-Nov-2024 05:22:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[16-Nov-2024 07:39:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrimStrings.php on line 7
+[16-Nov-2024 07:40:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Fideloper\Proxy\TrustProxies' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustProxies.php on line 8
+[16-Nov-2024 10:54:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/Authenticate.php on line 7
+[16-Nov-2024 12:34:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Fideloper\Proxy\TrustProxies' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustProxies.php on line 8
+[16-Nov-2024 19:41:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustHosts.php on line 7
+[19-Nov-2024 00:02:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[19-Nov-2024 20:41:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/EncryptCookies.php on line 7
+[04-Dec-2024 10:49:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/Authenticate.php on line 7
+[04-Dec-2024 10:49:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/EncryptCookies.php on line 7
+[04-Dec-2024 10:49:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[04-Dec-2024 10:50:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrimStrings.php on line 7
+[04-Dec-2024 10:50:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustHosts.php on line 7
+[04-Dec-2024 10:50:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Fideloper\Proxy\TrustProxies' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustProxies.php on line 8
+[04-Dec-2024 10:50:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[21-Dec-2024 02:43:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/EncryptCookies.php on line 7
+[21-Dec-2024 11:47:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[21-Dec-2024 12:24:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Fideloper\Proxy\TrustProxies' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustProxies.php on line 8
+[21-Dec-2024 12:25:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrimStrings.php on line 7
+[21-Dec-2024 16:56:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[24-Dec-2024 23:27:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/TrustHosts.php on line 7
+[25-Dec-2024 03:11:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/hamiltob/public_html/nasa/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/nasa/app/Http/Middleware/Authenticate.php on line 7
+[13-Jan-2025 07:17:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[13-Jan-2025 09:35:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustHosts.php on line 7
+[13-Jan-2025 10:32:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[13-Jan-2025 12:50:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/EncryptCookies.php on line 7
+[13-Jan-2025 15:16:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Fideloper\Proxy\TrustProxies' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustProxies.php on line 8
+[13-Jan-2025 17:00:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/Authenticate.php on line 7
+[13-Jan-2025 17:07:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrimStrings.php on line 7
+[18-Jan-2025 03:05:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/Authenticate.php on line 7
+[18-Jan-2025 03:05:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/EncryptCookies.php on line 7
+[18-Jan-2025 03:05:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[18-Jan-2025 03:05:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrimStrings.php on line 7
+[18-Jan-2025 03:05:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustHosts.php on line 7
+[18-Jan-2025 03:05:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Fideloper\Proxy\TrustProxies' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustProxies.php on line 8
+[18-Jan-2025 03:05:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[26-Jan-2025 23:28:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Http\Middleware\TrustHosts' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustHosts.php on line 7
+[26-Jan-2025 23:28:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Fideloper\Proxy\TrustProxies' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrustProxies.php on line 8
+[26-Jan-2025 23:29:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Auth\Middleware\Authenticate' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/Authenticate.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/Authenticate.php on line 7
+[26-Jan-2025 23:29:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/TrimStrings.php on line 7
+[26-Jan-2025 23:29:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[26-Jan-2025 23:29:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/EncryptCookies.php on line 7
+[26-Jan-2025 23:29:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance' not found in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7

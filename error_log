@@ -1,0 +1,2 @@
+[27-Sep-2024 09:09:05 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 7.4.33. in /home/hamiltob/public_html/nasa/vendor/composer/platform_check.php on line 28
+[01-Oct-2024 08:33:11 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 7.4.33. in /home/hamiltob/public_html/nasa/vendor/composer/platform_check.php on line 28

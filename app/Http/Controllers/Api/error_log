@@ -1,0 +1,20 @@
+[16-Jan-2025 02:32:06 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/hamiltob/public_html/mobile_app/app/Http/Controllers/Api/AuthController.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Controllers/Api/AuthController.php on line 19
+[21-Jan-2025 12:01:32 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/hamiltob/public_html/mobile_app/app/Http/Controllers/Api/AuthController.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Controllers/Api/AuthController.php on line 19
+[21-Jan-2025 18:16:18 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/hamiltob/public_html/mobile_app/app/Http/Controllers/Api/ServiceController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Controllers/Api/ServiceController.php on line 11
+[26-Jan-2025 23:30:52 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/hamiltob/public_html/mobile_app/app/Http/Controllers/Api/ServiceController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Controllers/Api/ServiceController.php on line 11
+[26-Jan-2025 23:30:55 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/hamiltob/public_html/mobile_app/app/Http/Controllers/Api/AuthController.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/hamiltob/public_html/mobile_app/app/Http/Controllers/Api/AuthController.php on line 19
