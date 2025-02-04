@@ -9,6 +9,7 @@ class Service extends Model
 {
     use HasFactory;
     protected $fillable = [
+            "category_id",
             "vendor_id",
             "name",
             "price",
@@ -21,5 +22,9 @@ class Service extends Model
         
         public function images() {
             return $this->hasMany(ServiceImage::class, 'service_id');
+        }
+
+        public function category() {
+            return $this->hasOne(Category::class, 'id', 'category_id');
         }
 }

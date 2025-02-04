@@ -30,7 +30,15 @@
                     <span>Dashboard</span>
                 </a>
             </li>
-          
+            <li>
+                <a  class="{{ request()->IS('admin/categories') ? 'active' : '' }}"  href="{{ route('admin.categories.index') }}">
+                    <span class="nav-link-icon">
+                        <i class="bi bi-bar-chart"></i>
+                    </span>
+                    <span>Categories</span>
+                </a>
+            </li>
+            
             <li>
                 <a  href="{{route('admin.logout') }}">
                     <span class="nav-link-icon">

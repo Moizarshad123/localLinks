@@ -8,77 +8,68 @@ use App\Models\Category;
 
 class CategoryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+       $categories = Category::orderByDESC('id')->get();
+       return view('admin.categories.index', compact('categories'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        //
+       return view('admin.categories.create');
+        
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $fileName = "";
+        $dir  = "uploads/categories/";
+
+        if($request->has("image")) {
+            $fileName = time().'-category.'.$request->image->getClientOriginalExtension();
+            $request->image->move($dir, $fileName);
+            $fileName = asset($dir.$fileName);
+        }
+        Category::create([
+            "name"=>$request->name,
+            "image"=>$fileName
+        ]);
+
+        return redirect('admin/categories')->with("success", "Category created");
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
-        //
+        $category = Category::find($id);
+        return view('admin.categories.edit', compact('category'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
-        //
+        $dir  = "uploads/categories/";
+
+        $category = Category::find($id);
+        $category->name = $request->name;
+
+        if($request->has("image")) {
+            $fileName = time().'-category.'.$request->image->getClientOriginalExtension();
+            $request->image->move($dir, $fileName);
+            $fileName = asset($dir.$fileName);
+
+            $category->image = $fileName;
+        }
+
+        $category->status = $request->status;
+        $category->save();
+        return redirect('admin/categories')->with("success", "Category updated");
+
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         //

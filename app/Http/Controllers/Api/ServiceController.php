@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\ServiceImage;
+use App\Models\Category;
+
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -15,7 +17,12 @@ class ServiceController extends Controller
 {
     
     public function services() {
-        $services = Service::with("images")->where('vendor_id', auth()->user()->id)->orderByDESC('id')->get();
+        $services = Service::with("category","images")->where('vendor_id', auth()->user()->id)->orderByDESC('id')->get();
+        return $this->success($services);
+    }
+
+    public function categories() {
+        $services = Category::orderBy('name', 'ASC')->get();
         return $this->success($services);
     }
     
@@ -28,20 +35,23 @@ class ServiceController extends Controller
             return $this->error('Validation Error', 200, [], $validator->errors());
         }
             
-        $service = Service::with("images")->find($request->service_id);
+        $service = Service::with("category","images")->find($request->service_id);
         return $this->success($service);
     }
     
     public function updateService(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
-                'service_id' => 'required'
+                'service_id' => 'required',
+                "category_id"=>'required',
+
             ]);
             if ($validator->fails()){
                 return $this->error('Validation Error', 200, [], $validator->errors());
             }
             
             $service = Service::find($request->service_id);
+            $service->category_id=$request->category_id;
             $service->name=$request->name;
             $service->price=$request->price;
             $service->location=$request->location;
@@ -69,7 +79,7 @@ class ServiceController extends Controller
                 }
             }
             
-            $services = Service::with("images")->where('vendor_id', auth()->user()->id)->orderByDESC('id')->get();
+            $services = Service::with("category","images")->where('vendor_id', auth()->user()->id)->orderByDESC('id')->get();
             return $this->success($services,"Service Updated");
             
         } catch (\Exception $e) {
@@ -82,14 +92,17 @@ class ServiceController extends Controller
         
         try {
             $validator = Validator::make($request->all(), [
-                'price' => 'required',
-                'name'    => 'required',
+                'price'       => 'required',
+                'name'        => 'required',
+                'category_id' => 'required',
+
             ]);
             if ($validator->fails()){
                 return $this->error('Validation Error', 200, [], $validator->errors());
             }
             DB::beginTransaction();
             $service = Service::create([
+                "category_id"=>$request->category_id,
                 "vendor_id" => auth()->user()->id,
                 "name"=>$request->name,
                 "price"=>$request->price,
@@ -109,7 +122,6 @@ class ServiceController extends Controller
                     $file->move($dir, $fileName);
                     $fileName = asset($dir.$fileName);
                     
-                    
                     $serviceImg = new ServiceImage();
                     $serviceImg->image = $fileName;
                     $serviceImg->service_id = $service->id;
@@ -117,15 +129,13 @@ class ServiceController extends Controller
                 }
             }
             
-            
             DB::commit();
-            $services = Service::where('vendor_id', auth()->user()->id)->orderByDESC('id')->get();
+            $services = Service::with("category","images")->where('vendor_id', auth()->user()->id)->orderByDESC('id')->get();
             return $this->success($services,"Service Created");
             
         } catch (\Exception $e) {
             DB::rollback();
             return $this->error($e->getMessage());
         }
-        
     }
 }
