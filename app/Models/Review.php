@@ -16,4 +16,12 @@ class Review extends Model
         "review"
     ];
 
+    public function user() {
+        return $this->hasOne(User::class, 'id', 'user_id');
+    }
+
+    public function media() {
+        return $this->hasMany(ReviewDetail::class, 'review_id');
+    }
+
 }

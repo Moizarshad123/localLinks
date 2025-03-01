@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Service;
+use App\Models\Review;
+use DB;
+
 
 class UserController extends Controller
 {
@@ -71,4 +74,53 @@ class UserController extends Controller
             return $this->error($e->getMessage());
         }
     }
+
+    public function dashboard() {
+        $categories = Category::skip(0)->take(6)->get();
+        $top_picks = Category::skip(5)->take(3)->get();
+        $explores = Category::skip(8)->take(3)->get();
+
+        $arr= [
+            "categories"=>$categories,
+            "top_picks"=>$top_picks,
+            "explore"=>$explores,
+        ];
+
+        return $this->success($arr);
+    }
+
+
+    public function serviceDetail(Request $request) {
+        try {
+            
+            $validator = Validator::make($request->all(), [
+                'service_id' => 'required',
+            ]);
+            if ($validator->fails()){
+                return $this->error('Validation Error', 200, [], $validator->errors());
+            }
+            $service = Service::with('category')->find($request->service_id);
+            return $this->success($service);
+
+        } catch (\Exception $e) {
+            return $this->error($e->getMessage());
+        }
+    }
+
+    public function reviews(Request $request) {
+        try {
+            $validator = Validator::make($request->all(), [
+                'vendor_id' => 'required',
+            ]);
+            if ($validator->fails()){
+                return $this->error('Validation Error', 200, [], $validator->errors());
+            }
+            $review = Review::with("user", "media")->where("vendor_id",$request->vendor_id)->orderByDESC('id')->get();
+            return $this->success($review);
+
+        } catch (\Exception $e) {
+            return $this->error($e->getMessage());
+        }
+    }
+    
 }

@@ -6,14 +6,22 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ServiceController;
 use App\Http\Controllers\Api\MiscellaneousController;
 use App\Http\Controllers\Api\UserController;
-
-
+use App\Http\Controllers\Api\CartController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
+
+
+    Route::post('cart/add', [CartController::class, 'addToCart']);
+    Route::post('cart/update', [CartController::class, 'updateCart']);
+    Route::get('/cart', [CartController::class, 'viewCart']);
+    Route::GET('/cart/clear', [CartController::class, 'clearCart']);
+    Route::GET('/cart/remove-cart-item', [CartController::class, 'removeCartItem']);
+
+
     Route::controller(AuthController::class)->group(function () {
         Route::PUT('update-fcm-token', 'updateFcmToken');
         Route::PUT('update-user-location', 'updateUserLocation');
@@ -36,6 +44,11 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::controller(UserController::class)->group(function () {
         Route::POST('add-review', 'addReview');
         Route::GET('category-wise-services', 'categoryWiseServices');
+        Route::GET('user-dashboard', 'dashboard');
+        Route::GET('service-detail', 'serviceDetail');
+        Route::GET('reviews', 'reviews');
+
+
         
     });
     
