@@ -16,8 +16,13 @@ use DB;
 class ServiceController extends Controller
 {
     
-    public function services() {
-        $services = Service::with("category","images")->where('vendor_id', auth()->user()->id)->orderByDESC('id')->get();
+    public function services(Request $request) {
+
+        if($request->category_id != 0) {
+            $services = Service::with("category","images")->where('category_id', $request->category_id)->where('vendor_id', auth()->user()->id)->orderByDESC('id')->get();
+        } else {
+            $services = Service::with("category","images")->where('vendor_id', auth()->user()->id)->orderByDESC('id')->get();
+        }
         return $this->success($services);
     }
 
@@ -86,7 +91,6 @@ class ServiceController extends Controller
             return $this->error($e->getMessage());
         }
     }
-    
     
     public function addService(Request $request) {
         

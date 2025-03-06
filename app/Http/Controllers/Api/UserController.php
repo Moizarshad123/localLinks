@@ -75,8 +75,13 @@ class UserController extends Controller
         }
     }
 
-    public function dashboard() {
-        $categories = Category::skip(0)->take(6)->get();
+    public function dashboard(Request $request) {
+
+        if($request->search != null) {
+            $categories = Category::where('name', "LIKE", "%".$request->search."%")->skip(0)->take(6)->get();
+        } else {
+            $categories = Category::skip(0)->take(6)->get();
+        }
         $top_picks = Category::skip(5)->take(3)->get();
         $explores = Category::skip(8)->take(3)->get();
 
