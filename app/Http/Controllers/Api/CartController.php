@@ -82,7 +82,7 @@ class CartController extends Controller
     {
         $cart = Cart::where('user_id', auth()->user()->id)->with('items')->first();
         if (!$cart) {
-            return $this->success('Cart is empty!');
+            return $this->success([], 'Cart is empty!');
         }
         return $this->success($cart);
     }

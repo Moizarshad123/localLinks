@@ -26,8 +26,13 @@ class ServiceController extends Controller
         return $this->success($services);
     }
 
-    public function categories() {
-        $services = Category::orderBy('name', 'ASC')->get();
+    public function categories(Request $request) {
+
+        if($request->search != null) {
+            $services = Category::where("name", "LIKE", "%".$request->search."%")->orderBy('name', 'ASC')->get();
+        } else {
+            $services = Category::orderBy('name', 'ASC')->get();
+        }
         return $this->success($services);
     }
     
