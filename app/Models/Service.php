@@ -10,6 +10,7 @@ class Service extends Model
     use HasFactory;
     protected $fillable = [
             "category_id",
+            "type",
             "vendor_id",
             "name",
             "price",

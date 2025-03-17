@@ -50,11 +50,11 @@ class ServiceController extends Controller
     }
     
     public function updateService(Request $request) {
+
         try {
             $validator = Validator::make($request->all(), [
                 'service_id' => 'required',
                 "category_id"=>'required',
-
             ]);
             if ($validator->fails()){
                 return $this->error('Validation Error', 200, [], $validator->errors());
@@ -62,6 +62,7 @@ class ServiceController extends Controller
             
             $service = Service::find($request->service_id);
             $service->category_id=$request->category_id;
+            $service->type=$request->type;
             $service->name=$request->name;
             $service->price=$request->price;
             $service->location=$request->location;
@@ -71,7 +72,7 @@ class ServiceController extends Controller
             $service->detail=$request->detail;
             $service->save();
             
-             if(count($request->images) > 0) {
+            if(count($request->images) > 0) {
                 ServiceImage::where("service_id", $request->service_id)->delete();
                 $dir  = "uploads/services/";
                 foreach($request->images as $image) {
@@ -104,6 +105,7 @@ class ServiceController extends Controller
                 'price'       => 'required',
                 'name'        => 'required',
                 'category_id' => 'required',
+                'type'        => 'required'
 
             ]);
             if ($validator->fails()){
