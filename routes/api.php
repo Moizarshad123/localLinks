@@ -7,6 +7,8 @@ use App\Http\Controllers\Api\ServiceController;
 use App\Http\Controllers\Api\MiscellaneousController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\CartController;
+use App\Http\Controllers\Api\CardController;
+
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
@@ -47,9 +49,13 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         Route::GET('user-dashboard', 'dashboard');
         Route::GET('service-detail', 'serviceDetail');
         Route::GET('reviews', 'reviews');
+    });
 
-
-        
+    Route::controller(CardController::class)->group(function () {
+        Route::post('add-card', 'add');
+        Route::GET('retreive-cards', 'retrieveCards');
+        Route::POST('set-default-card', 'makeDefaultCard');
+        Route::POST('delete-card', 'deleteCard');
     });
     
 });
