@@ -42,6 +42,8 @@ class CardController extends Controller
             $isDefault  = UserCard::checkUserCardExistsAny();
             if ($isDefault == 0){
                 $this->updateDefaultPaymentMethod($customerStripeId, $request->token);
+            } else {
+                $isDefault = 1;
             }
             UserCard::createCard($request->card_holder, $customerStripeId, $stripeCard->id, $isDefault);
             return $this->success(array(), 'Card added successfully');
