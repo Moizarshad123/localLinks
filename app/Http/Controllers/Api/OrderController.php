@@ -10,6 +10,7 @@ use App\Models\OrderDetail;
 use App\Models\UserCard;
 use App\Models\Cart;
 use App\Models\CartDetail;
+use App\Models\Booking;
 use App\Traits\StripeClientTrait;
 use Stripe\Stripe;
 use \Stripe\Charge;
@@ -100,12 +101,93 @@ class OrderController extends Controller
 
                     DB::commit();
                     return $this->success([], "Order Placed Successfully");
+                } else {
+                    return $this->error("Something went wrong");
                 }
             }
             
         } catch (\Exception $ex) {
             DB::rollBack();
             return $this->error($ex->getMessage());
+        }
+    }
+
+    public function createBooking(Request $request) {
+        try {
+            $validator = Validator::make($request->all(), [
+                "vendor_id"=> 'required',
+                "amount" => 'required',
+                "service_id"=> 'required',
+                // "card_id"=> 'required',
+                "date"=>'required',
+                "time"=> 'required',
+                "location"=> 'required',
+            ]);
+            if ($validator->fails()){
+                return $this->error('Validation Error', 200, [], $validator->errors());
+            }
+
+            DB::beginTransaction();
+
+            $usercard   = UserCard::where('user_id',auth()->user()->id)->where('is_default', 1)->first();
+
+            if(!$usercard) {
+                return $this->error("You don't have any card. or set default card");
+            } else {
+
+                $total = $request->total_amount;
+                \Stripe\Stripe::setApiKey(env('STRIPE_SECRET_KEY'));
+
+                $intent =  $this->stripe->paymentIntents->create([
+                    'amount' => $total * 100,
+                    'currency' => 'usd',
+                    'payment_method' => $usercard->card_id,
+                    'customer' => $usercard->customer_stripe_id,
+                    'metadata' => [
+                        'name' => Auth::user()->name,
+                        'email' => Auth::user()->email,
+                    ],
+                ]);
+
+                
+                $charge = $this->stripe->paymentIntents->confirm(
+                    $intent->id,
+                    [
+                        'return_url' => env('APP_URL')
+                    ]
+                );
+              
+                if($charge["status"] == "succeeded")
+                {
+                    Booking::create([
+                        "user_id" => auth()->user()->id,
+                        "vendor_id" => $request->vendor_id,
+                        "service_id" => $request->service_id,
+                        "card_id" => $request->card_id,
+                        "amount" => $request->amount,
+                        "date" => $request->date,
+                        "time" => $request->time,
+                        "location" => $request->location,
+                        "lat" => $request->lat,
+                        "lng" => $request->lng,
+                        "block" => $request->block,
+                        "room" => $request->room,
+                        "appartment" => $request->appartment,
+                        "note" => $request->note,
+                        "status"=>"Pending"
+                    ]);
+                    DB::commit();
+                    return $this->success([], "Booking created");
+                } else {
+
+                    DB::rollback();
+                    return $this->error("Something went wrong");
+                }
+
+            }
+        } catch (\Exception $e) {
+            DB::rollback();
+            return $this->error($e->getMessage());
         }
     }
 }

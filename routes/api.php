@@ -25,6 +25,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::GET('/cart/clear', [CartController::class, 'clearCart']);
     Route::GET('/cart/remove-cart-item', [CartController::class, 'removeCartItem']);
     Route::POST('place-order', [OrderController::class, 'placeOrder']);
+    Route::POST('create-booking', [OrderController::class, 'createBooking']);
 
     
     Route::controller(AuthController::class)->group(function () {
@@ -52,6 +53,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         Route::GET('user-dashboard', 'dashboard');
         Route::GET('service-detail', 'serviceDetail');
         Route::GET('reviews', 'reviews');
+
     });
 
     Route::controller(CardController::class)->group(function () {
