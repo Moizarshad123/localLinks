@@ -68,13 +68,16 @@ class AuthController extends Controller
                     "role_id"    => $request->user_type,
                     "first_name" => $request->first_name,
                     "last_name"  => $request->last_name,
-                    "name"      => $request->last_name.' '.$request->last_name,
-                    "email"     => $request->email,
-                    "phone"     => $request->phone,
-                    "password"  => Hash::make($request->password),
-                    "otp"       => $otpToken,
-                    "fcm_token" => $request->fcm_token ?? null,
-                    "status"    => 0,
+                    "name"       => $request->last_name.' '.$request->last_name,
+                    "email"      => $request->email,
+                    "phone"      => $request->phone,
+                    "password"   => Hash::make($request->password),
+                    "otp"        => $otpToken,
+                    "fcm_token"  => $request->fcm_token ?? null,
+                    'location'   => $request->location,
+                    'lat'        => $request->lat,
+                    'lng'        => $request->lng,
+                    "status"     => 0,
                 ]);
                 $token           = $user->createToken('API Token')->plainTextToken;
                 $user->api_token = $token;

@@ -16,6 +16,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::GET('categories', [ServiceController::class, 'categories']);
 Route::group(['middleware' => ['auth:sanctum']], function () {
 
     Route::post('cart/add', [CartController::class, 'addToCart']);
@@ -34,7 +35,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     });
     
     Route::controller(ServiceController::class)->group(function () {
-        Route::GET('categories', 'categories');
+      
         Route::GET('services', 'services');
         Route::POST('add-service', 'addService');
         Route::POST('update-service', 'updateService');
