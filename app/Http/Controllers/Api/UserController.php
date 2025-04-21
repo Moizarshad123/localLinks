@@ -8,11 +8,50 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Service;
 use App\Models\Review;
+use App\Models\User;
+
 use DB;
 
 
 class UserController extends Controller
 {
+
+    public function vendorProfile(Request $request) {
+        try {
+
+            $validator = Validator::make($request->all(), [
+                'vendor_id' => 'required',
+            ]);
+            if ($validator->fails()){
+                return $this->error('Validation Error', 200, [], $validator->errors());
+            }
+
+            $user = User::with('vendor')->find($request->vendor_id);
+            if(!$user) {
+                return $this->error("User not found");
+            }
+            $reviews = Review::with("user", "media")->where('vendor_id', $request->vendor_id)->orderByDESC('id')->get();
+            $services = Service::with("category")->where('vendor_id', $request->vendor_id)->orderByDESC('id')->skip(0)->take(5)->get();
+            $arr=[
+                "id"=>$user->id,
+                "name"=>$user->name,
+                "image"=>$user->image,
+                "address"=>$user?->vendor->address,
+                "registration_number"=>$user?->vendor->reg_number,
+                "category"=>$user?->vendor?->category,
+                "reviews"=>$reviews,
+                "services"=>$services
+            ];
+
+
+
+            return $this->success($arr);
+
+
+        } catch (\Exception $e) {
+            return $this->error($e->getMessage());
+        }
+    }
 
     public function addReview(Request $request) {
         try {

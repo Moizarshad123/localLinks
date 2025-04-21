@@ -9,6 +9,8 @@ use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\CartController;
 use App\Http\Controllers\Api\CardController;
 use App\Http\Controllers\Api\OrderController;
+use App\Http\Controllers\Api\VendorController;
+
 
 
 
@@ -53,8 +55,14 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         Route::GET('user-dashboard', 'dashboard');
         Route::GET('service-detail', 'serviceDetail');
         Route::GET('reviews', 'reviews');
-
+        Route::GET('vendor-profile', 'vendorProfile');
     });
+
+    Route::controller(VendorController::class)->group(function () {
+        Route::GET('my-reviews', 'reviews');
+    });
+
+    
 
     Route::controller(CardController::class)->group(function () {
         Route::post('add-card', 'add');

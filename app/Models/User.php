@@ -52,4 +52,8 @@ class User extends Authenticatable
         return $this->hasOne(Role::class, 'id', 'role_id');
     }
 
+    public function vendor() {
+        return $this->belongsTo(Vendor::class, 'id', 'user_id');
+    }
+
 }
