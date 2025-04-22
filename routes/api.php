@@ -60,6 +60,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
     Route::controller(VendorController::class)->group(function () {
         Route::GET('my-reviews', 'reviews');
+        Route::GET('dashboard', 'dashboard');
+
     });
 
     

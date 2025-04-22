@@ -69,12 +69,8 @@ class UserController extends Controller
                 "rating"    => $request->rating,
                 "review"    => $request->review,
             ]);
-
-
-
             $dir  = "uploads/reviews/";
-
-            if(count($request->media) > 0) {
+            if($request->media != null) {
                 foreach ($request->media as $image) {
 
                     $fileName = time().'-reviews.'.$image->getClientOriginalExtension();
@@ -87,6 +83,12 @@ class UserController extends Controller
                     ]);
                 }
             }
+
+            $avg_rating = Review::where("vendor_id", $request->vendor_id)->avg('rating');
+
+            $update_rating = User::find($request->vendor_id);
+            $update_rating->rating = $avg_rating;
+            $update_rating->save();
 
             DB::commit();
             return $this->success([], "Review submitted");
