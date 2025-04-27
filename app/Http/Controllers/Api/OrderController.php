@@ -135,7 +135,7 @@ class OrderController extends Controller
                 return $this->error("You don't have any card. or set default card");
             } else {
 
-                $total = $request->total_amount;
+                $total = $request->amount;
                 \Stripe\Stripe::setApiKey(env('STRIPE_SECRET_KEY'));
 
                 $intent =  $this->stripe->paymentIntents->create([
