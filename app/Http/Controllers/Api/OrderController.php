@@ -94,6 +94,9 @@ class OrderController extends Controller
                                 "price"=>$item->price,
                                 "qty"=>$item->qty,
                             ]);
+
+                            $order->vendor_id = $item->vendor_id;
+                            $order->save();
                         }
                     }
                     CartDetail::where('cart_id', $cart->id)->delete();
